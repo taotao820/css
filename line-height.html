@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>行高</title>
+</head>
+    <style>
+        .cc1{ font-size: 12px;}
+        .cc2{ font-size: 24px;}
+        .cc3{ font-size: 36px;}
+    </style>
+<body>
+    <div style="border:solid 1px red;">
+        <span style="background:blueviolet;color:aliceblue;font-size:20px;line-height:60px;">
+            居中==line-height比fontsize值要多，这样会让span中的文字在div中居中
+        </span>
+    </div>
+    <div class="c1">
+        <span class="cc1">vertical-align只对行内元素有效，默认是baseline
+        </span>
+        <span class="cc2">vertical-align只对行内元素有效，默认是baseline</span>
+        <span class="cc3">vertical-align只对行内元素有效，默认是baseline</span>
+    </div>
+    <div style="background:pink">
+        <span>img 3px 缝隙问题 解决方式 vertical-align设置为bottom或者display设置为block，设置为inline-block是没有效果的，因为inline-block周围的元素还是按照inline的规则来的</span>
+        <img src="./test.jpg" alt="">
+    </div>
+</body>
+</html>

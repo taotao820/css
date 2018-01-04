@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒模型测试</title>
+    <style type="text/css">
+    body{
+        color:#fff;
+        background: #edf5f9;
+        position: relative;
+    }
+    .box{
+        position: absolute;
+        background: #2980b9;
+    }
+    h1{
+        background: #3498db;
+        padding: 20px;
+        margin: 30px;
+        border: 5px solid #fff;
+        width: 120px;
+        height: 120px;
+        /* box-sizing: border-box; ->ie模型*/
+        /* box-sizing: content-box; ->标准模型*/
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>box</h1>
+        <h2>盒模型分为标准和ie，在标准中（chrome）给一个块元素宽高仅仅是指内容的宽高，而padding和border是另算的；在ie中，一个块元素的宽高是内容+padding+border的整体的宽高。
+            h5中有个box-sizing属性，可以设定来统一这两种盒模型，content-box和border-box分别对应标准和ie模型</h2>
+    </div>
+</body>
+</html>
